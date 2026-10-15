@@ -1,0 +1,20 @@
+experiment_id: fm-example-naive-seed-42
+date: '2026-09-11'
+research_question: How does a transparent naive forecast behave on a small seasonal
+  synthetic series?
+dataset: Synthetic monthly trend-and-seasonality example generated locally
+model: Last-value naive forecast
+configuration:
+  seed: 42
+  series_length: 48
+  training_points: 36
+  forecast_horizon: 12
+  software:
+    python: 3.12.14
+    numpy: 2.5.3
+    pyyaml: 6.0.3
+metrics:
+  mae: 1.129521245475771
+  rmse: 1.411589846367726
+notes: Introductory reproducibility example only. The data are synthetic, and these
+  measurements are not evidence about foundation models.
